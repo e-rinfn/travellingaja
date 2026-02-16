@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <link rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Luxury Travel — Landing</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- Font elegan -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <!-- Background media -->
+  <div class="hero-media" aria-hidden="true">
+    <!-- Kalau mau video: taruh file assets/hero.mp4 -->
+    <!--
+<video class="hero-video" autoplay muted loop playsinline>
+  <source src="assets/hero.mp4" type="video/mp4">
+</video>
+-->
+
+    <!-- Fallback image (kalau video gagal / kamu mau gambar saja) -->
+    <img class="hero-image" id="heroImage" src="assets/bg1.jpg" alt="">
+
+    <!-- Overlay biar teks kebaca -->
+    <div class="hero-overlay"></div>
+    <div class="hero-grain"></div>
+  </div>
+
+  <!-- Navbar -->
+  <header class="nav">
+    <a class="brand" href="#">
+  <span class="brand-name">Travelling Aja</span>
+</a>
+
+    <nav class="nav-links" aria-label="Primary">
+      <a href="#journeys">Journeys</a>
+      <a href="#destinations">Destinations</a>
+      <a href="#stories">Stories</a>
+      <a href="#about">About</a>
+      <a class="pill" href="#contact">Contact</a>
+    </nav>
+
+    <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <!-- Main Hero -->
+  <main class="hero">
+    <div class="hero-text-anim">
+  <div class="hero-text-anim hero-billboard">
+  <h2 class="bb-title">
+  </h2>
+
+</div>
+</div>
+    <section class="hero-content">
+      <p class="kicker">Teman Wisata Anda</p>
+      <h1 class="title">Travelling Aja</h1>
+
+      <p class="sub">
+        Pelan pelan, kita tentukan ke mana langkahmu berikutnya — Teman asik yang selalu jadi andalan wisatamu.
+      </p>
+
+      <div class="cta-row">
+        <a class="btn primary" href="#journeys">Explore journeys</a>
+        <a class="btn ghost" href="#contact">Plan my trip</a>
+      </div>
+
+      <div class="meta-row">
+        <span class="dot"></span><span>By appointment</span>
+        <span class="sep">•</span>
+        <span>Global concierge</span>
+        <span class="sep">•</span>
+        <span>Since 19XX</span>
+      </div>
+    </section>
+
+    <!-- Kanan bawah: chips info -->
+    <aside class="hero-side">
+      <div class="glass card">
+        <p class="small">Featured</p>
+        <h3>Ocean &amp; Wild</h3>
+        <p class="muted">Whales, fjords, and private lodges.</p>
+        <a class="link" href="#destinations">View destination →</a>
+      </div>
+
+      <div class="glass card">
+        <p class="small">Next departure</p>
+        <h3>March 2026</h3>
+        <p class="muted">Limited slots available.</p>
+        <a class="link" href="#contact">Request invite →</a>
+      </div>
+    </aside>
+
+    <!-- Scroll hint -->
+    <div class="scroll-hint">
+      <span>Scroll</span>
+      <div class="mouse">
+        <div class="wheel"></div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Sections (dummy) -->
+  <section id="journeys" class="section">
+    <div class="container">
+      <h2>Journeys</h2>
+      <p>Isi dengan paket wisata kamu.</p>
+    </div>
+  </section>
+
+  <section id="destinations" class="section">
+    <div class="container">
+      <h2>Destinations</h2>
+      <p>Isi dengan destinasi unggulan kamu.</p>
+    </div>
+  </section>
+
+  <section id="stories" class="section">
+    <div class="container">
+      <h2>Stories</h2>
+      <p>Isi dengan blog/cerita perjalanan.</p>
+    </div>
+  </section>
+
+  <section id="about" class="section">
+    <div class="container">
+      <h2>About</h2>
+      <p>Website ini dibuat sebagai referensi untuk mewujudkan pengalaman travelling yang lebih luas, nyaman, dan praktis. Kami menghadirkan jaringan informasi perjalanan yang langsung dibagikan oleh penduduk lokal maupun individu yang berpengalaman dan berkompeten di dunia travel.
+Nikmati perjalanan yang lebih seru, menyenangkan, dan efisien, serta memudahkan para traveler dalam merencanakan dan menjalani setiap momen perjalanan mereka. 🙌🥳.</p>
+    </div>
+  </section>
+
+  <section id="contact" class="section">
+    <div class="container">
+      <h2>Contact</h2>
+      <form class="form"
+      action="https://formspree.io/f/xlgwnjor"
+      method="POST">
+       <form class="form"
+      action="https://formspree.io/f/ISI_ENDPOINT_KAMU"
+      method="POST">
+
+  <input type="text" name="nama" placeholder="Nama" required>
+
+  <input type="email" name="email" placeholder="Email" required>
+
+  <textarea name="pesan" rows="4"
+    placeholder="Rencana perjalanan kamu..." required></textarea>
+
+  <input type="hidden" name="_subject"
+         value="Pesan baru dari Travelling Aja">
+
+  <button class="btn primary" type="submit">Kirim</button>
+
+</form>
+      </form>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <p class="footer-credit">
+  © <span id="year"></span> Travelling Aja — Website design by:
+  <a class="ig-link"
+     href="https://instagram.com/arifsihabudin_"
+     target="_blank">
+
+     <i class="fa-brands fa-instagram"></i>
+     arifsihabudin_
+
+  </a>
+</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

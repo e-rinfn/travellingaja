@@ -1,11 +1,15 @@
 <!doctype html>
 <html lang="id">
 <head>
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="shortcut icon" href="favicon.png">
+  <link rel="apple-touch-icon" href="favicon.png">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet"
   href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Luxury Travel — Landing</title>
+  <title>Beranda — Travelling Aja</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -39,11 +43,11 @@
 </a>
 
     <nav class="nav-links" aria-label="Primary">
-      <a href="#journeys">Journeys</a>
+      <a href="#journeys">Jelajahi</a>
       <a href="#destinations">Destinations</a>
       <a href="#stories">Stories</a>
       <a href="#about">About</a>
-      <a class="pill" href="#contact">Contact</a>
+      <a class="pill" href="#contact">Bagikan Perjalananmu disini</a>
     </nav>
 
     <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">
@@ -69,16 +73,18 @@
       </p>
 
       <div class="cta-row">
-        <a class="btn primary" href="#journeys">Explore journeys</a>
-        <a class="btn ghost" href="#contact">Plan my trip</a>
+        <a class="btn primary" href="#journeys">Mulai Menjelajah</a>
+        <a class="btn ghost" href="#contact">Bagikan Perjalanan Anda</a>
       </div>
 
       <div class="meta-row">
-        <span class="dot"></span><span>By appointment</span>
+        <span class="dot"></span><span>Cerita perjalanan nyata</span>
         <span class="sep">•</span>
-        <span>Global concierge</span>
+        <span>Inspirasi tanpa batas</span>
         <span class="sep">•</span>
-        <span>Since 19XX</span>
+        <span>Untuk semua Traveller</span>
+        <span class="sep">•</span>
+        <span>Since 2026</span>
       </div>
     </section>
 
@@ -111,36 +117,43 @@
   <!-- Sections (dummy) -->
   <section id="journeys" class="section">
     <div class="container">
-      <h2>Journeys</h2>
-      <p>Isi dengan paket wisata kamu.</p>
+      <h2><a href="jelajahi.html" class="section-link">Jelajahi</a></h2>
+      <p>Coming soon.</p>
     </div>
   </section>
 
   <section id="destinations" class="section">
     <div class="container">
       <h2>Destinations</h2>
-      <p>Isi dengan destinasi unggulan kamu.</p>
+      <p>Coming soon.</p>
     </div>
   </section>
 
   <section id="stories" class="section">
     <div class="container">
       <h2>Stories</h2>
-      <p>Isi dengan blog/cerita perjalanan.</p>
+      <p>Coming Soon.</p>
     </div>
   </section>
 
   <section id="about" class="section">
     <div class="container">
       <h2>About</h2>
-      <p>Website ini dibuat sebagai referensi untuk mewujudkan pengalaman travelling yang lebih luas, nyaman, dan praktis. Kami menghadirkan jaringan informasi perjalanan yang langsung dibagikan oleh penduduk lokal maupun individu yang berpengalaman dan berkompeten di dunia travel.
-Nikmati perjalanan yang lebih seru, menyenangkan, dan efisien, serta memudahkan para traveler dalam merencanakan dan menjalani setiap momen perjalanan mereka. 🙌🥳.</p>
+      <p>Website ini Travelling Aja hadir sebagai platform perjalanan modern yang dirancang untuk menghubungkan inspirasi, pengalaman, dan informasi wisata dalam satu ruang digital yang terintegrasi. Kami bertujuan memudahkan setiap orang dalam menemukan destinasi terbaik, merencanakan perjalanan dengan lebih percaya diri, serta menikmati pengalaman travelling yang lebih bermakna.
+Platform ini juga menjadi wadah bagi para konten kreator perjalanan dari berbagai pelosok untuk berbagi cerita, perspektif, dan pengalaman autentik mereka. Melalui konten yang lebih nyata dan terperinci, pengguna dapat memperoleh referensi wisata yang lebih relevan, terpercaya, dan inspiratif.
+Dengan fokus khusus pada dunia travel, Travelling Aja membantu wisatawan menjelajahi tempat baru dengan informasi yang lebih jelas, pengalaman yang lebih personal, serta rekomendasi yang lahir langsung dari perjalanan nyata. Kami percaya bahwa setiap perjalanan bukan sekadar tujuan, tetapi sebuah cerita yang layak untuk ditemukan dan dibagikan.</p>
+<div class="about-tagline">
+  <span>Discover more.</span>
+  <span>Travel smarter.</span>
+  <span>Experience deeper.^^</span>
+</div>
+</p>
     </div>
   </section>
 
   <section id="contact" class="section">
     <div class="container">
-      <h2>Contact</h2>
+      <h2>Contact (bagikan perjalananmu disini)</h2>
       <form class="form"
       action="https://formspree.io/f/xlgwnjor"
       method="POST">
@@ -148,12 +161,13 @@ Nikmati perjalanan yang lebih seru, menyenangkan, dan efisien, serta memudahkan 
       action="https://formspree.io/f/ISI_ENDPOINT_KAMU"
       method="POST">
 
-  <input type="text" name="nama" placeholder="Nama" required>
+   <input type="text" name="nama" placeholder="Nama" required>
 
   <input type="email" name="email" placeholder="Email" required>
+  <input type="url" placeholder="Link video perjalanan kamu (Youtube, Tiktok, Instagram, Facebook)">
 
   <textarea name="pesan" rows="4"
-    placeholder="Rencana perjalanan kamu..." required></textarea>
+    placeholder="Tuliskan biodata pengirim..." required></textarea>
 
   <input type="hidden" name="_subject"
          value="Pesan baru dari Travelling Aja">

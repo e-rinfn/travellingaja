@@ -296,7 +296,7 @@ body{
   font-family:"Playfair Display", serif;
   font-size: 34px;
 }
-.section p{
+section p:not(.about-tagline){
   margin:0;
   color: var(--muted);
   line-height:1.8;
@@ -569,5 +569,219 @@ input:focus, textarea:focus{
 .ig-link:hover .ig-icon{
   transform: scale(1.2);
   filter: drop-shadow(0 0 8px rgba(225,48,108,.35));
+}
+/* TAGLINE ABOUT - PREMIUM */
+.about-tagline{
+  margin-top: 30px;
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  font-style: italic;
+
+  /* gradient text */
+  background: linear-gradient(90deg, #ffd89b, #7ec8ff, #c2ffd8);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+
+  opacity: 0.95;
+}
+
+/* garis kecil di atas tagline */
+.about-tagline::before{
+  content: "";
+  display: block;
+  width: 60px;
+  height: 2px;
+  background: linear-gradient(90deg, #ffd89b, #7ec8ff);
+  margin-bottom: 14px;
+  border-radius: 99px;
+}/* TAGLINE ABOUT - BRAND LOOK */
+.about-tagline{
+  margin-top: 26px;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  align-items: center;
+
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 1.6px;
+  text-transform: none;
+}
+/* TAGLINE SIGNATURE STYLE */
+.about-tagline{
+  margin-top: 28px;
+
+  font-family: 'Playfair Display', serif; /* beda font */
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  line-height: 1.6;
+
+  color: #ffd89b; /* warna warm travel */
+  font-style: italic;
+
+  text-shadow:
+    0 0 8px rgba(255,216,155,0.25),
+    0 0 18px rgba(255,216,155,0.15);
+
+  opacity: 0.95;
+}
+
+/* garis elegan kecil */
+.about-tagline::before{
+  content: "";
+  display: block;
+  width: 70px;
+  height: 2px;
+  margin-bottom: 14px;
+  background: linear-gradient(90deg,#ffd89b,#7ec8ff);
+  border-radius: 999px;
+}.about-tagline:hover{
+  letter-spacing: 2px;
+  transition: 0.4s ease;
+}/* FORCE TAGLINE STYLE (override semua) */
+#about .about-tagline{
+  font-family: 'Playfair Display', serif !important;
+  font-size: 20px !important;
+  font-weight: 500 !important;
+  letter-spacing: 1px !important;
+  line-height: 1.6 !important;
+
+  color: #ffd89b !important; /* tidak putih */
+  font-style: italic !important;
+
+  text-shadow:
+    0 0 8px rgba(255,216,155,0.25),
+    0 0 18px rgba(255,216,155,0.15) !important;
+
+  opacity: 0.95 !important;
+  margin-top: 28px !important;
+}
+
+#about .about-tagline::before{
+  content: "" !important;
+  display: block !important;
+  width: 70px !important;
+  height: 2px !important;
+  margin-bottom: 14px !important;
+  background: linear-gradient(90deg,#ffd89b,#7ec8ff) !important;
+  border-radius: 999px !important;
+}
+.section-link {
+    color: white;          /* ubah jadi putih */
+    text-decoration: none; /* hilangkan garis bawah */
+}
+
+.section-link:visited {
+    color: white;          /* biar tidak jadi ungu */
+}
+
+.section-link:hover {
+    color: #f5f5f5;
+    opacity: 0.8;
+    cursor: pointer;
+}/* Link judul section: luxury hover */
+.section-link{
+  color:#fff;
+  text-decoration:none;
+  position:relative;
+  display:inline-block;
+  transition: transform .25s ease, text-shadow .25s ease, opacity .25s ease;
+  will-change: transform;
+}
+
+/* biar tidak jadi ungu setelah diklik */
+.section-link:visited{
+  color:#fff;
+}
+
+/* garis bawah tipis yang animasi dari kiri */
+.section-link::after{
+  content:"";
+  position:absolute;
+  left:0;
+  bottom:-8px;            /* jarak garis dari teks */
+  width:100%;
+  height:2px;
+  background:rgba(255,255,255,.85);
+  transform:scaleX(0);
+  transform-origin:left;
+  transition:transform .25s ease;
+  border-radius:2px;
+  opacity:.9;
+}
+
+/* efek hover: glow + zoom halus + garis muncul */
+.section-link:hover{
+  transform: translateY(-2px) scale(1.03);
+  text-shadow: 0 0 18px rgba(255,255,255,.35);
+  opacity: .95;
+  cursor:pointer;
+}
+
+.section-link:hover::after{
+  transform:scaleX(1);
+}
+
+/* opsional: saat klik terasa “press” */
+.section-link:active{
+  transform: translateY(-1px) scale(1.01);
+}.maintenance{
+  min-height:100vh;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  background:linear-gradient(
+    rgba(0,0,0,0.65),
+    rgba(0,0,0,0.75)
+  ),
+  url("assets/bg1.jpg") center/cover no-repeat;
+  color:#fff;
+  text-align:center;
+  padding:40px;
+}
+
+.maintenance-box{
+  max-width:700px;
+  backdrop-filter: blur(10px);
+  background:rgba(0,0,0,0.35);
+  padding:50px;
+  border-radius:14px;
+}
+
+.maintenance h1{
+  font-size:2.2rem;
+  margin-bottom:20px;
+  font-weight:600;
+}
+
+.maintenance p{
+  opacity:.9;
+  line-height:1.7;
+}
+
+.sub-text{
+  margin-top:15px;
+  font-style:italic;
+  opacity:.7;
+}
+
+.back-home{
+  display:inline-block;
+  margin-top:30px;
+  padding:12px 22px;
+  border:1px solid #fff;
+  color:#fff;
+  text-decoration:none;
+  border-radius:30px;
+  transition:.3s;
+}
+
+.back-home:hover{
+  background:#fff;
+  color:#000;
+}
 }
 }

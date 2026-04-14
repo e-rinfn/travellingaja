@@ -1,0 +1,156 @@
+.user-box {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-left: 12px;
+}
+
+.user-name {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: white;
+  font-weight: 500;
+  background: rgba(255,255,255,0.15);
+  padding: 6px 14px;
+  border-radius: 20px;
+  backdrop-filter: blur(12px);
+  transition: 0.3s;
+}
+
+.user-name:hover {
+  background: rgba(255,255,255,0.25);
+}
+
+.logout-btn {
+  color: white;
+  text-decoration: none;
+  padding: 6px 14px;
+  border-radius: 20px;
+  background: rgba(255,0,0,0.30);
+  transition: 0.3s;
+}
+
+.logout-btn:hover {
+  background: rgba(255,0,0,0.55);
+}
+.user-dropdown-container {
+  position: relative;
+}
+
+/* Dropdown box */
+.user-dropdown {
+  position: absolute;
+  top: 45px;
+  right: 0;
+  background: rgba(20,20,20,0.9);
+  backdrop-filter: blur(10px);
+  border-radius: 10px;
+  padding: 10px;
+  display: none;
+  flex-direction: column;
+  min-width: 140px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+  z-index: 999;
+}
+
+/* Active */
+.user-dropdown.active {
+  display: flex;
+}
+
+/* Item */
+.user-dropdown a {
+  color: white;
+  text-decoration: none;
+  padding: 8px 10px;
+  border-radius: 8px;
+  transition: 0.2s;
+}
+
+.user-dropdown a:hover {
+  background: rgba(255,255,255,0.1);
+}
+.language-box {
+  position: relative;
+}
+
+.language-button {
+  background: rgba(255,255,255,0.1);
+  border: 1px solid rgba(255,255,255,0.2);
+  color: white;
+  padding: 6px 14px;
+  border-radius: 20px;
+  cursor: pointer;
+  backdrop-filter: blur(10px);
+}
+#languageDropdown {
+  display: none !important;
+}
+
+#languageDropdown.show {
+  display: block !important;
+}
+
+.language-dropdown {
+  position: absolute;
+  top: 45px;
+  right: 0;
+  background: rgba(0,0,0,0.85);
+  backdrop-filter: blur(12px);
+  border-radius: 12px;
+  display: none;
+  min-width: 180px;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+}
+
+.language-dropdown a {
+  display: block;
+  padding: 10px 14px;
+  color: white;
+  text-decoration: none;
+}
+
+.language-dropdown a:hover {
+  background: rgba(255,255,255,0.1);
+}
+
+/* ini penting */
+.language-dropdown.show {
+  display: block;
+}
+.language-box {
+  position: relative;
+}
+
+#languageDropdown {
+  position: absolute !important;
+  top: 45px;
+  right: 0;
+  
+  display: none !important;
+
+  flex-direction: column !important; /* ini penting */
+  
+  background: rgba(0,0,0,0.9);
+  backdrop-filter: blur(12px);
+  border-radius: 12px;
+  min-width: 180px;
+
+  z-index: 9999; /* biar di atas semua */
+}
+#languageDropdown {
+  opacity: 0;
+  transform: translateY(10px);
+  transition: 0.3s;
+}
+
+#languageDropdown.show {
+  display: block !important;
+  opacity: 1;
+  transform: translateY(0);
+}
+.fi {
+  margin-right: 8px;
+}

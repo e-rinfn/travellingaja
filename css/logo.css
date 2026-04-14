@@ -1,0 +1,71 @@
+
+.brand-logo {
+  width: 35px;
+  height: 35px;
+  object-fit: contain;
+}
+
+.brand-name {
+  font-weight: 600;
+  font-size: 18px;
+  color: white;
+}
+.brand-logo {
+  width: 38px;
+  height: 38px;
+  object-fit: contain;
+  filter: drop-shadow(0 0 6px rgba(255,255,255,0.4));
+  transition: 0.3s;
+}
+
+.brand:hover .brand-logo {
+  transform: scale(1.1);
+}
+.user-box {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-left: 15px;
+}
+
+.user-name {
+  color: white;
+  font-weight: 500;
+  background: rgba(255,255,255,0.15);
+  padding: 6px 14px;
+  border-radius: 20px;
+  backdrop-filter: blur(10px);
+}
+
+/* Logout */
+.nav-login {
+  color: white;
+  text-decoration: none;
+  padding: 6px 14px;
+  border-radius: 20px;
+  background: rgba(255,0,0,0.3);
+  transition: 0.3s;
+}
+
+.nav-login:hover {
+  background: rgba(255,0,0,0.6);
+}
+.user-name {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: white;
+  font-weight: 500;
+  background: rgba(255,255,255,0.15);
+  padding: 6px 14px;
+  border-radius: 20px;
+  backdrop-filter: blur(12px);
+  transition: 0.3s;
+}
+
+.user-name:hover {
+  background: rgba(255,255,255,0.25);
+}
+.nav-login {
+  cursor: pointer;
+}

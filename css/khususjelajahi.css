@@ -1,0 +1,113 @@
+/* =========================
+   FORCE RESET KHUSUS PAGE
+========================= */
+.jelajahi-page * {
+  box-sizing: border-box;
+}
+
+/* =========================
+   FIX LOGO JADI NORMAL
+========================= */
+.jelajahi-page .logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.jelajahi-page .logo-img {
+  width: 40px !important;
+  height: 40px !important;
+  object-fit: contain;
+}
+
+.jelajahi-page img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* =========================
+   FIX NAVBAR
+========================= */
+.jelajahi-page .jelajahi-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* =========================
+   FIX HERO BIAR GA KETUTUP
+========================= */
+.jelajahi-page .hero-jelajahi {
+  position: relative;
+  z-index: 2;
+}
+
+/* =========================
+   MATIKAN STYLE BERBAHAYA
+   DARI NETFLIX CSS
+========================= */
+.jelajahi-page img,
+.jelajahi-page video,
+.jelajahi-page iframe {
+  max-width: 100%;
+  height: auto;
+}
+
+/* =========================
+   ANTI FULLSCREEN IMAGE BUG
+========================= */
+.jelajahi-page img {
+  position: static !important;
+  transform: none !important;
+}
+.user-box {
+  background: rgba(255,255,255,0.08);
+  padding: 8px 14px;
+  border-radius: 999px;
+  font-size: 14px;
+  color: white;
+  margin-left: 15px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.user-box a {
+  color: white;
+  text-decoration: none;
+}
+,.user-box {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-left: 16px;
+  padding: 8px 14px;
+  border-radius: 999px;
+  background: rgba(255,255,255,0.08);
+  color: white;
+  font-size: 14px;
+}
+
+.user-box a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.user-box a:hover {
+  color: #a78bfa;
+}
+
+.login-btn {
+  margin-left: 16px;
+  padding: 8px 14px;
+  border-radius: 999px;
+  background: rgba(255,255,255,0.08);
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.login-btn:hover {
+  color: #a78bfa;
+}

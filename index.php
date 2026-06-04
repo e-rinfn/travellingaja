@@ -113,10 +113,10 @@ session_start();
 
     <aside class="hero-side">
       <div class="glass card">
-        <p class="small">Featured</p>
-        <h3>Ocean &amp; Wild</h3>
-        <p class="muted">Whales, fjords, and private lodges.</p>
-        <a class="link" href="#destinations">View destination →</a>
+        <p class="small">About Me</p>
+        <h3>Curriculum Vitae (CV)</h3>
+        <p class="muted">Arif Sihabudin</p>
+        <a class="link" href="folder arif sihabudin/portfolio.html">View Portfolio →</a>
       </div>
 
       <div class="glass card">
@@ -190,9 +190,7 @@ session_start();
       <form class="form" action="https://formspree.io/f/xlgwnjor" method="POST">
         <input type="text" name="nama" placeholder="Nama" required>
         <input type="email" name="email" placeholder="Email" required>
-        <input type="url" name="link_video" placeholder="Link video perjalanan kamu (YouTube, TikTok, Instagram, Facebook)">
-        
-        <textarea name="pesan" rows="4" placeholder="Tuliskan biodata pengirim..." required></textarea>
+        <textarea name="pesan" rows="4" placeholder="Kirim link video disertakan biodata pengirim..." required></textarea>
 
         <input type="hidden" name="_subject" value="Pesan baru dari Travelling Aja">
 
